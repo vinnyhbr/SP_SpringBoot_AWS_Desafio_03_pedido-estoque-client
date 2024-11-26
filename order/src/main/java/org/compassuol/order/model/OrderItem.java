@@ -7,15 +7,14 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
+@Entity
 @NoArgsConstructor
-public class Order {
+public class OrderItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long clientId;
-    private OrderStatus status;
 
-
+    private Long itemId;
+    private Integer quantity;
 }
