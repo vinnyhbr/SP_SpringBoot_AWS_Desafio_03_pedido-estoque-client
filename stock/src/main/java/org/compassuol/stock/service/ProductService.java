@@ -17,5 +17,12 @@ public class ProductService {
     public Product findByname(String name){
         return repository.findByName(name);
     }
-    
+    public void updateStock(String name, int quantity) {
+        Product product = repository.findByName(name);
+        if (product == null || product.getQuantity() < quantity) {
+            throw new IllegalArgumentException("Estoque insuficiente para o produto: " + name);
+        }
+        product.setQuantity(product.getQuantity() - quantity);
+        repository.save(product);
+    }
 }
