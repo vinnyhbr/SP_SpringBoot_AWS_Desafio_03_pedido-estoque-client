@@ -20,7 +20,7 @@ public class ProductService {
     public void updateStock(String name, int quantity) {
         Product product = repository.findByName(name);
         if (product == null || product.getQuantity() < quantity) {
-            throw new IllegalArgumentException("Estoque insuficiente para o produto: " + name);
+            throw new IllegalArgumentException("Insufficient stock for the product: " + name);
         }
         product.setQuantity(product.getQuantity() - quantity);
         repository.save(product);
