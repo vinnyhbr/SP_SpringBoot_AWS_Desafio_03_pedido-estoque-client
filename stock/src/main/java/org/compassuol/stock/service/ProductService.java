@@ -5,24 +5,34 @@ import org.compassuol.stock.domain.Product;
 import org.compassuol.stock.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class ProductService {
-    private final ProductRepository repository;
+    private final ProductRepository productRepository;
 
     public Product save(Product product){
-        return repository.save(product);
+        return productRepository.save(product);
+    }
+
+    public Optional<Product>  checkAvailability(String name, int quantity) {
+        Optional<Product> product = Optional.ofNullable(productRepository.findByName(name));
+        if (product.isPresent() && product.get().getQuantity() >= quantity) {
+            return product;
+        }
+        return Optional.empty();
     }
 
     public Product findByname(String name){
-        return repository.findByName(name);
+        return productRepository.findByName(name);
     }
     public void updateStock(String name, int quantity) {
-        Product product = repository.findByName(name);
+        Product product = productRepository.findByName(name);
         if (product == null || product.getQuantity() < quantity) {
             throw new IllegalArgumentException("Insufficient stock for the product: " + name);
         }
         product.setQuantity(product.getQuantity() - quantity);
-        repository.save(product);
+        productRepository.save(product);
     }
 }
