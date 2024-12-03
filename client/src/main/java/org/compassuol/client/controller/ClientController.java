@@ -1,8 +1,11 @@
 package org.compassuol.client.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.compassuol.client.client.OrderServiceClient;
 import org.compassuol.client.domain.Client;
+import org.compassuol.client.domain.dto.OrderDTO;
 import org.compassuol.client.service.ClientService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,6 +16,7 @@ import java.util.List;
 public class ClientController {
 
     private final ClientService clientService;
+    private final OrderServiceClient orderServiceClient;
 
     @PostMapping
     public Client createClient(@RequestBody Client client) {
@@ -27,6 +31,11 @@ public class ClientController {
     @GetMapping
     public List<Client> listAllClients() {
         return clientService.listAllClients();
+    }
+    @GetMapping("/{id}/orders")
+    public ResponseEntity<List<OrderDTO>> searchCustomerOrders(@PathVariable Long id) {
+        List<OrderDTO> orders = orderServiceClient.searchOrdersByCustomer(id);
+        return ResponseEntity.ok(orders);
     }
 
 
