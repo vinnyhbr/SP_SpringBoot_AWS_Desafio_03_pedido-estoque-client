@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2670e71d-5930-42eb-964f-4ad007522c66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/compassuol/order/model/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/compassuol/order/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/compassuol/order/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,6 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.OrderApplication.executor": "Run",
-    "git-widget-placeholder": "feat/order",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -106,5 +104,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
