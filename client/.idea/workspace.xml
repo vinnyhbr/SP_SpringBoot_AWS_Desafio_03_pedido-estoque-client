@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2670e71d-5930-42eb-964f-4ad007522c66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/compassuol/order/model/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/compassuol/order/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/compassuol/order/model/Order.java" afterDir="false" />
-    </list>
+    <list default="true" id="1be284ea-115e-4703-be4e-32aa9c29fec1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,12 +13,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="feat/client" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -47,17 +48,17 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2pO9hnKD85mjX8fAs0mXrxptp96" />
+  <component name="ProjectId" id="2pTitsx8om1BMgGzfKPclFev12j" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ClientApplicationTests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.OrderApplication.executor": "Run",
     "git-widget-placeholder": "feat/order",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -68,20 +69,35 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.compassuol.order.repository.model" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="order" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.compassuol.order.OrderApplication" />
+  <component name="RunManager" selected="JUnit.ClientApplicationTests">
+    <configuration name="ClientApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.compassuol.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.compassuol.client" />
+      <option name="MAIN_CLASS_NAME" value="org.compassuol.client.ClientApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.compassuol.client.ClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClientApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -94,13 +110,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2670e71d-5930-42eb-964f-4ad007522c66" name="Changes" comment="" />
-      <created>1732626379417</created>
+      <changelist id="1be284ea-115e-4703-be4e-32aa9c29fec1" name="Changes" comment="" />
+      <created>1732796688286</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1732626379417</updated>
-      <workItem from="1732626380425" duration="978000" />
-      <workItem from="1732627377070" duration="2334000" />
+      <updated>1732796688286</updated>
+      <workItem from="1732796689306" duration="608000" />
+      <workItem from="1733228732499" duration="2135000" />
     </task>
     <servers />
   </component>
